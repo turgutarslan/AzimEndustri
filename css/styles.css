@@ -272,6 +272,12 @@ body {
     animation: identifier1 1.5s ease;
   }
 
+  .logo {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
 
 
 
