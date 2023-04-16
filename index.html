@@ -228,9 +228,9 @@
 
     <!-- Galeriler -->
     <section id="menu">
-      <div class="row mt-5 galeri">
+      <div class="row mt-5 galeri reveal">
         <div
-          class="col-lg-6 col-md-12 col-sm-12 galeri-content"
+          class="col-lg-6 col-md-6 col-sm-12 galeri-content"
         >
           <div class="galeri-title mx-5">
             <h1>Home</h1>
@@ -254,7 +254,7 @@
             </p>
           </div>
         </div>
-        <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12">
           <img
             class="img-fluid"
             src="img\menu1.jpg"
@@ -262,8 +262,10 @@
           />
         </div>
       </div>
-      <div class="row mt-5 galeri2">
-        <div class="col-lg-6 col-md-12 col-sm-12">
+      <div class="row mt-5 galeri2 reveal">
+        <div
+          class="col-lg-6 col-md-6 col-sm-12 galeri-responsive1"
+        >
           <img
             class="img-fluid img-fluid1"
             src="img\menu2.jpg"
@@ -271,7 +273,7 @@
           />
         </div>
         <div
-          class="col-lg-6 col-md-12 col-sm-12 galeri-content"
+          class="col-lg-6 col-md-6 col-sm-12 galeri-content galeri-responsive"
         >
           <div class="galeri-title mx-5">
             <h1>Home</h1>
@@ -296,9 +298,9 @@
           </div>
         </div>
       </div>
-      <div class="row mt-5 galeri2">
+      <div class="row mt-5 galeri3 reveal">
         <div
-          class="col-lg-6 col-md-12 col-sm-12 galeri-content"
+          class="col-lg-6 col-md-6 col-sm-12 galeri-content"
         >
           <div class="galeri-title mx-5">
             <h1>Home</h1>
@@ -322,7 +324,7 @@
             </p>
           </div>
         </div>
-        <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12">
           <img
             class="img-fluid img-fluid1"
             src="img\menu3.jpg"
@@ -330,8 +332,10 @@
           />
         </div>
       </div>
-      <div class="row mt-5 galeri2">
-        <div class="col-lg-6 col-md-12 col-sm-12">
+      <div class="row mt-5 galeri4 reveal">
+        <div
+          class="col-lg-6 col-md-6 col-sm-12 galeri-responsive4"
+        >
           <img
             class="img-fluid img-fluid1"
             src="img\menu4.jpg"
@@ -339,7 +343,7 @@
           />
         </div>
         <div
-          class="col-lg-6 col-md-12 col-sm-12 galeri-content"
+          class="col-lg-6 col-md-6 col-sm-12 galeri-content galeri-responsive3"
         >
           <div class="galeri-title mx-5">
             <h1>Home</h1>
@@ -364,6 +368,37 @@
           </div>
         </div>
       </div>
+      <script>
+        function reveal() {
+          var reveals =
+            document.querySelectorAll(".reveal");
+
+          for (
+            var i = 0;
+            i < reveals.length;
+            i++
+          ) {
+            var windowHeight = window.innerHeight;
+            var elementTop =
+              reveals[i].getBoundingClientRect()
+                .top;
+            var elementVisible = 150;
+
+            if (
+              elementTop <
+              windowHeight - elementVisible
+            ) {
+              reveals[i].classList.add("active");
+            } else {
+              reveals[i].classList.remove(
+                "active"
+              );
+            }
+          }
+        }
+
+        window.addEventListener("scroll", reveal);
+      </script>
     </section>
 
     <!-- Call to Action -->
