@@ -4,6 +4,15 @@ body {
 
 /* navBar Stlyes */
 
+#NavBar {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  transition: 0.3s;
+  z-index: 999;
+
+}
+
 .navBar {
   display: flex;
   height: 60px;
@@ -11,30 +20,57 @@ body {
   background-color: transparent;
 }
 
-.logo {
+.logoAmblem {
   position: absolute;
-  top: 5%;
+  top: 100%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.logoAmblemSiyah {
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.logoAmblemBeyaz {
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.logosiyah {
+  position: absolute;
+  top: 99%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.logo :hover {
-  color: #fff;
-}
-
-.logo1 {
-  font-family: 'Anton', sans-serif;
-  text-decoration-color: #fff;
-  color: #fff;
-  font-size: 3rem;
-  text-decoration: none;
+.logobeyaz {
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .navBar span {
-  display: flex;
-  align-items: flex-end;
+  position: absolute;
   margin-left: 20%;
-  margin-right: 1rem;
+  margin-top: 2%;
+  margin-right: 8vh;
+  cursor: pointer;
+}
+
+.menubeyaz {
+  font-size: 30px;
+  color: #f1f1f1;
+}
+
+.menusiyah {
+  font-size: 30px;
+  color: #000;
 }
 
 .overlay {
@@ -44,8 +80,8 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #fff;
+  background-color: #fff;
   overflow-y: hidden;
   transition: 0.5s;
 }
@@ -59,17 +95,17 @@ body {
 }
 
 .overlay a {
-  padding: 8px;
+  padding: 25px;
   text-decoration: none;
   font-size: 36px;
-  color: #818181;
+  color: #1c1c1c;
   display: block;
   transition: 0.3s;
 }
 
 .overlay a:hover,
 .overlay a:focus {
-  color: #f1f1f1;
+  color: #e4e1e1;
 }
 
 .overlay .closebtn {
@@ -79,7 +115,6 @@ body {
   font-size: 60px;
 }
 
-
 /* Carousel */
 
 #karosel {
@@ -88,7 +123,6 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  object-fit: fill;
 }
 
 .karosel-img {
@@ -108,31 +142,46 @@ body {
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: identifier1 1.5s ease;
+  animation: identifier1 1.5s ease-out;
+}
+
+.carousel .carousel-indicators button {
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  margin: -4% 7px 0 7px !important;
 }
 
 /* menu */
 #menu {
-  padding: 2% 1%;
+  padding: 2% 0;
   margin-top: 100vh;
 }
 
+#menu h1,
+p,
+a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
 .galeri2 {
-  margin-top: -7% !important;
+  margin-top: -6% !important;
 }
 
 .galeri3 {
-  margin-top: -7% !important;
+  margin-top: -6% !important;
 }
 
 .galeri4 {
-  margin-top: -7% !important;
+  margin-top: -6% !important;
 }
 
 .galeri-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 
 .galeri-text {
@@ -141,17 +190,6 @@ body {
   text-align: justify;
 }
 
-
-.img-fluid {
-  transition: 0.3;
-  transition: ease-in;
-  animation: identifier2 1s ease;
-}
-
-.img-fluid :hover {
-  transition: 0.3;
-  transition: ease-in;
-}
 
 /* CTA Section */
 
@@ -178,6 +216,7 @@ body {
   transform: scale(2);
 }
 
+
 /* keyFrames */
 
 @keyframes identifier1 {
@@ -199,7 +238,7 @@ body {
 
 .reveal {
   position: relative;
-  transform: translateY(10%);
+  transform: translateY(6%);
   opacity: 0.2;
   transition: 1s all ease;
 }
@@ -209,6 +248,17 @@ body {
   opacity: 1;
 }
 
+/* .reveal1 {
+  position: relative;
+  transform: translateY(10%);
+  opacity: 0.2;
+  transition: 1s all ease;
+}
+
+.reveal1.active {
+  transform: translateY(0);
+  opacity: 1;
+} */
 
 
 /* mediaQuerry */
@@ -229,7 +279,7 @@ body {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1024px) {
 
   #karosel {
     object-fit: none;
@@ -253,14 +303,6 @@ body {
     margin-top: 7% !important;
   }
 
-  .logo1 {
-    font-family: 'Anton', sans-serif;
-    text-decoration-color: #fff;
-    color: #fff;
-    font-size: 1.5rem;
-    text-decoration: none;
-  }
-
   .carousel-item em {
     color: #fff;
     position: absolute;
@@ -269,16 +311,69 @@ body {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: identifier1 1.5s ease;
+    animation: identifier1 1.5s ease-out;
   }
 
-  .logo {
+  .navBar span {
+    margin-left: 20%;
+    margin-right: 5vh;
+    margin-top: 4vh;
+  }
+
+  .logoAmblem {
+    position: absolute;
+    top: 120%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+
+  .logosiyah {
+    display: none;
     position: absolute;
     top: 5%;
     left: 25%;
     transform: translate(-50%, -50%);
   }
 
+  .logobeyaz {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+
+  .galeri-projeler-content {
+    text-align: justify;
+  }
+
+}
+
+/* HAKKIMIZDA */
+
+#Hakkımızda {
+  margin: 10% 5% !important;
+}
 
 
+/* PROJELER */
+
+
+#Projeler {
+  margin: 2% 5%;
+  margin-top: 20vh;
+}
+
+/* TASARIMLAR */
+
+#Tasarımlar {
+  margin: 2% 5%;
+  margin-top: 20vh;
+}
+
+/* İLETİŞİM */
+
+.iletisim-resim {
+  position: absolute;
+  top: 0;
 }

@@ -1,458 +1,472 @@
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Hoşgeldiniz - Azim Endüstri</title>
 
-    <!-- favicon -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hoşgeldiniz - Azim Endüstri</title>
 
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="img/logo6.png"
-    />
+  <!-- favicon -->
 
-    <!-- googleFonts -->
+  <link rel="icon" type="image/x-icon" href="img/logo6.png" />
 
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Baskervville:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
+  <!-- googleFonts -->
 
-    <!-- fontawesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Baskervville:ital@0;1&display=swap"
+    rel="stylesheet" />
 
-    <script
-      src="https://kit.fontawesome.com/80975a5121.js"
-      crossorigin="anonymous"
-    ></script>
+  <!-- fontawesome -->
 
-    <!-- bootStrap -->
+  <script src="https://kit.fontawesome.com/80975a5121.js" crossorigin="anonymous"></script>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+  <!-- bootStrap -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-    <!-- CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-    <link
-      rel="stylesheet"
-      href="css\styles.css"
-    />
+  <!-- CSS -->
 
+  <link rel="stylesheet" href="css\styles.css" />
+</head>
+
+<body>
+  <section id="homePage"></section>
+  <section id="NavBar">
+    <!-- navBar -->
+    <!-- jQuerry -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!-- mainJs -->
-
-    <script
-      type="text/javascript"
-      src="js\main.js"
-    ></script>
-  </head>
-
-  <body>
+    <script src="js\main.js"></script>
     <!-- Logo -->
 
-    <div class="logo">
-      <a href="" class="logo1">Azim Endüstri</a>
+    <!-- CHANGE LOGO COLOR-->
+    <!-- <script>
+      $(function () {
+        var logobeyaz = $(".logobeyaz");
+        $(window).scroll(function () {
+          var scroll = $(window).scrollTop();
+
+          if (scroll >= 1000) {
+            logobeyaz
+              .removeClass("logosiyah")
+              .addClass("logobeyaz");
+          } else {
+            logobeyaz
+              .removeClass("logobeyaz")
+              .addClass("logosiyah");
+          }
+        });
+      });
+    </script> -->
+
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          var scroll = $(window).scrollTop();
+          if (scroll > 895) {
+            $(".logobeyaz").css(
+              "visibility",
+              "hidden"
+            );
+          } else {
+            $(".logobeyaz").css(
+              "visibility",
+              "visible"
+            );
+          }
+        });
+      });
+    </script>
+
+    <!-- CHANGE MENU ICON COLOR-->
+    <script>
+      $(function () {
+        var menubeyaz = $(".menubeyaz");
+        $(window).scroll(function () {
+          var scroll = $(window).scrollTop();
+
+          if (scroll >= 900) {
+            menubeyaz
+              .removeClass("menebeyaz")
+              .addClass("menusiyah");
+          } else {
+            menubeyaz
+              .removeClass("menusiyah")
+              .addClass("menubeyaz");
+          }
+        });
+      });
+    </script>
+
+    <!-- CHANGE LOGO AMBLEM ICON COLOR  -->
+
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          var scroll = $(window).scrollTop();
+          if (scroll > 895) {
+            $(".logoAmblemBeyaz").css(
+              "visibility",
+              "hidden"
+            );
+          } else {
+            $(".logoAmblemBeyaz").css(
+              "visibility",
+              "visible"
+            );
+          }
+        });
+      });
+    </script>
+
+    <div class="logoAmblem">
+      <div class="logoAmblemSiyah">
+        <a href="http://www.azimendustri.com/" class="logo1">
+          <img class="logo1" src="img\logosiyah1.png" alt="" /></a>
+      </div>
+      <div class="logoAmblemBeyaz">
+        <a href="http://www.azimendustri.com/" class="logo1">
+          <img class="logo1" src="img\logo7.png" alt="" /></a>
+      </div>
     </div>
+    <div class="logosiyah">
+      <a href="http://www.azimendustri.com/" class="logo1">
+        <img class="logo1" src="img\logo - yazı-png-siyah2.png" alt="" /></a>
+    </div>
+    <div class="logobeyaz">
+      <a href="http://www.azimendustri.com/" class="logo1">
+        <img class="logo1" src="img\logo - yazı-png-beyaz2.png" alt="" />
+      </a>
+    </div>
+    <div class="navBar">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-    <!-- navBar -->
-    <section id="NavBar">
-      <div class="navBar">
-        <div id="myNav" class="overlay">
-          <a
-            href="javascript:void(0)"
-            class="closebtn"
-            onclick="closeNav()"
-            >&times;</a
-          >
-
-          <div class="overlay-content">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-          </div>
-        </div>
-
-        <span
-          style="
-            font-size: 30px;
-            color: #f1f1f1;
-            cursor: pointer;
-          "
-          onclick="openNav()"
-          >&#9776;</span
-        >
-
-        <script>
-          function openNav() {
-            document.getElementById(
-              "myNav"
-            ).style.height = "100%";
-          }
-
-          function closeNav() {
-            document.getElementById(
-              "myNav"
-            ).style.height = "0%";
-          }
-        </script>
-      </div>
-    </section>
-    <!-- Carousel -->
-    <section id="karosel">
-      <div
-        id="carouselExampleControls"
-        class="carousel slide carousel-fade"
-        data-ride="false"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div
-            class="carousel-item active"
-            data-bs-interval="4000"
-          >
-            <img
-              class="karosel-img"
-              src="img\karosel1.jpeg"
-              alt="Çalışmalarımız"
-            />
-            <em
-              >"Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore
-              et dolore magna aliqua."</em
-            >
-          </div>
-          <div
-            class="carousel-item"
-            data-bs-interval="4000"
-          >
-            <img
-              class="karosel-img"
-              src="img\karosel2.jpeg"
-              alt="Çalışmalarımız"
-            />
-            <em
-              >"quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea
-              commodo consequat."</em
-            >
-          </div>
-          <div
-            class="carousel-item"
-            data-bs-interval="4000"
-          >
-            <img
-              class="karosel-img"
-              src="img\karosel3.jpeg"
-              alt="Çalışmalarımız"
-            />
-            <em
-              >"velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident"</em
-            >
-          </div>
-          <div
-            class="carousel-item"
-            data-bs-interval="4000"
-          >
-            <img
-              class="karosel-img"
-              src="img\karosel4.jpeg"
-              alt="Çalışmalarımız"
-            />
-            <em
-              >"Sed ut perspiciatis unde omnis
-              iste natus error sit voluptatem
-              accusantium doloremque"</em
-            >
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
-        >
-          <span
-            class="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span class="visually-hidden"
-            >Previous</span
-          >
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-        >
-          <span
-            class="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span class="visually-hidden"
-            >Next</span
-          >
-        </button>
-      </div>
-    </section>
-
-    <!-- Galeriler -->
-    <section id="menu">
-      <div class="row mt-5 galeri reveal">
-        <div
-          class="col-lg-6 col-md-6 col-sm-12 galeri-content"
-        >
-          <div class="galeri-title mx-5">
-            <h1>Home</h1>
-          </div>
-          <div class="galeri-text mx-5">
-            <p>
-              "Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
-              Duis aute irure dolor in
-              reprehenderit in voluptate velit
-              esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit
-              anim id est laborum."
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <img
-            class="img-fluid"
-            src="img\menu1.jpg"
-            alt="Hizmetlerimiz"
-          />
+        <div class="overlay-content">
+          <a href="Hakkımızda.html">Hakkımızda</a>
+          <a href="Projeler.html">Projelerimiz</a>
+          <a href="Tasarımlar.html">Tasarımlarımız</a>
+          <a href="İletişim.html">İletişim</a>
         </div>
       </div>
-      <div class="row mt-5 galeri2 reveal">
-        <div
-          class="col-lg-6 col-md-6 col-sm-12 galeri-responsive1"
-        >
-          <img
-            class="img-fluid img-fluid1"
-            src="img\menu2.jpg"
-            alt="Hizmetlerimiz"
-          />
-        </div>
-        <div
-          class="col-lg-6 col-md-6 col-sm-12 galeri-content galeri-responsive"
-        >
-          <div class="galeri-title mx-5">
-            <h1>Home</h1>
-          </div>
-          <div class="galeri-text mx-5">
-            <p>
-              "Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
-              Duis aute irure dolor in
-              reprehenderit in voluptate velit
-              esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit
-              anim id est laborum."
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-5 galeri3 reveal">
-        <div
-          class="col-lg-6 col-md-6 col-sm-12 galeri-content"
-        >
-          <div class="galeri-title mx-5">
-            <h1>Home</h1>
-          </div>
-          <div class="galeri-text mx-5">
-            <p>
-              "Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
-              Duis aute irure dolor in
-              reprehenderit in voluptate velit
-              esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit
-              anim id est laborum."
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <img
-            class="img-fluid img-fluid1"
-            src="img\menu3.jpg"
-            alt="Hizmetlerimiz"
-          />
-        </div>
-      </div>
-      <div class="row mt-5 galeri4 reveal">
-        <div
-          class="col-lg-6 col-md-6 col-sm-12 galeri-responsive4"
-        >
-          <img
-            class="img-fluid img-fluid1"
-            src="img\menu4.jpg"
-            alt="Hizmetlerimiz"
-          />
-        </div>
-        <div
-          class="col-lg-6 col-md-6 col-sm-12 galeri-content galeri-responsive3"
-        >
-          <div class="galeri-title mx-5">
-            <h1>Home</h1>
-          </div>
-          <div class="galeri-text mx-5">
-            <p>
-              "Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
-              Duis aute irure dolor in
-              reprehenderit in voluptate velit
-              esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit
-              anim id est laborum."
-            </p>
-          </div>
-        </div>
-      </div>
+
+      <span class="menubeyaz" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+
+      <!-- OVERLAY MENU -->
+
       <script>
-        function reveal() {
-          var reveals =
-            document.querySelectorAll(".reveal");
-
-          for (
-            var i = 0;
-            i < reveals.length;
-            i++
-          ) {
-            var windowHeight = window.innerHeight;
-            var elementTop =
-              reveals[i].getBoundingClientRect()
-                .top;
-            var elementVisible = 150;
-
-            if (
-              elementTop <
-              windowHeight - elementVisible
-            ) {
-              reveals[i].classList.add("active");
-            } else {
-              reveals[i].classList.remove(
-                "active"
-              );
-            }
-          }
+        function openNav() {
+          document.getElementById(
+            "myNav"
+          ).style.height = "100%";
         }
 
-        window.addEventListener("scroll", reveal);
+        function closeNav() {
+          document.getElementById(
+            "myNav"
+          ).style.height = "0%";
+        }
       </script>
-    </section>
+    </div>
 
-    <!-- Call to Action -->
+    <!-- HİDE NAVBAR ON SCROLL -->
 
-    <section id="cta">
-      <h3>
-        <em
-          >"Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-          dolore magna aliqua."</em
-        >
-      </h3>
-    </section>
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos =
+          window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById(
+            "NavBar"
+          ).style.top = "0px";
+        } else {
+          document.getElementById(
+            "NavBar"
+          ).style.top = "-200px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+  </section>
+  <!-- Carousel -->
+  <section id="karosel">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="6000">
+          <img class="karosel-img" src="img\karoseldeneme1.jpg" alt="Çalışmalarımız" />
+          <em>"Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore
+            et dolore magna aliqua."</em>
+        </div>
+        <div class="carousel-item" data-bs-interval="6000">
+          <img class="karosel-img" src="img\karoseldeneme2.jpg" alt="Çalışmalarımız" />
+          <em>"quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea
+            commodo consequat."</em>
+        </div>
+        <div class="carousel-item" data-bs-interval="6000">
+          <img class="karosel-img" src="img\karoseldeneme3.jpg" alt="Çalışmalarımız" />
+          <em>"velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident"</em>
+        </div>
+        <div class="carousel-item" data-bs-interval="6000">
+          <img class="karosel-img" src="img\karoseldeneme4.jpg" alt="Çalışmalarımız" />
+          <em>"Sed ut perspiciatis unde omnis
+            iste natus error sit voluptatem
+            accusantium doloremque"</em>
+        </div>
+        <div class="carousel-item" data-bs-interval="6000">
+          <img class="karosel-img" src="img\karoseldeneme5.jpg" alt="Çalışmalarımız" />
+          <em>"Sed ut perspiciatis unde omnis
+            iste natus error sit voluptatem
+            accusantium doloremque"</em>
+        </div>
+        <div class="carousel-item" data-bs-interval="6000">
+          <img class="karosel-img" src="img\karoseldeneme6.jpg" alt="Çalışmalarımız" />
+          <em>"Sed ut perspiciatis unde omnis
+            iste natus error sit voluptatem
+            accusantium doloremque"</em>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+  </section>
 
-    <!-- Footer -->
+  <!-- Galeriler -->
+  <section id="menu">
+    <a href="Projeler.html">
+      <div class="row mt-5 galeri reveal">
+        <div class="col-lg-6 col-md-6 col-sm-12 galeri-content">
+          <div class="galeri-title mx-5">
+            <h1>Projelerimiz</h1>
+          </div>
+          <div class="galeri-text mx-5">
+            <p>
+              "Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi
+              ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor
+              in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt
+              mollit anim id est laborum."
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <img class="img-fluid" src="img\karoseldeneme3.jpg" alt="Hizmetlerimiz" />
+        </div>
+      </div>
+    </a>
+    <a href="Tasarımlar.html">
+      <div class="row mt-5 galeri2 reveal">
+        <div class="col-lg-6 col-md-6 col-sm-12 galeri-responsive1">
+          <img class="img-fluid img-fluid1" src="img\karoseldeneme3.jpg" alt="Hizmetlerimiz" />
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 galeri-content galeri-responsive">
+          <div class="galeri-title mx-5">
+            <h1>Tasarımlarımız</h1>
+          </div>
+          <div class="galeri-text mx-5">
+            <p>
+              "Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi
+              ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor
+              in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt
+              mollit anim id est laborum."
+            </p>
+          </div>
+        </div>
+      </div>
+    </a>
 
-    <footer id="footer">
-      <a href="#NavBar">
-        <i
-          class="fa-solid fa-arrow-up-long arrow-up"
-          style="margin: 2rem"
-        ></i>
+    <!-- HENÜZ BOŞ OLAN MENULER -->
+
+    <!-- <a href="XXXXXXXXXXXXXXXX"
+        ><div class="row mt-5 galeri3 reveal">
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 galeri-content"
+          >
+            <div class="galeri-title mx-5">
+              <h1>Home</h1>
+            </div>
+            <div class="galeri-text mx-5">
+              <p>
+                "Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor
+                in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt
+                mollit anim id est laborum."
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-6 col-sm-12"
+          >
+            <img
+              class="img-fluid img-fluid1"
+              src="img\menu3.jpg"
+              alt="Hizmetlerimiz"
+            />
+          </div>
+        </div>
       </a>
-      <br />
-      <a href=""
+      <a href=XXXXXXXXXXXXXX">
+        <div class="row mt-5 galeri4 reveal">
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 galeri-responsive4"
+          >
+            <img
+              class="img-fluid img-fluid1"
+              src="img\menu4.jpg"
+              alt="Hizmetlerimiz"
+            />
+          </div>
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 galeri-content galeri-responsive3"
+          >
+            <div class="galeri-title mx-5">
+              <h1>Home</h1>
+            </div>
+            <div class="galeri-text mx-5">
+              <p>
+                "Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor
+                in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt
+                mollit anim id est laborum."
+              </p>
+            </div>
+          </div>
+        </div>
+      </a> -->
+    <script>
+      function reveal() {
+        var reveals =
+          document.querySelectorAll(".reveal");
+
+        for (
+          var i = 0;
+          i < reveals.length;
+          i++
+        ) {
+          var windowHeight = window.innerHeight;
+          var elementTop =
+            reveals[i].getBoundingClientRect()
+              .top;
+          var elementVisible = 150;
+
+          if (
+            elementTop <
+            windowHeight - elementVisible
+          ) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove(
+              "active"
+            );
+          }
+        }
+      }
+
+      window.addEventListener("scroll", reveal);
+    </script>
+  </section>
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+    <h3>
+      <em>"Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et
+        dolore magna aliqua."</em>
+    </h3>
+  </section>
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <a href="#top">
+      <i class="fa-solid fa-arrow-up-long arrow-up" style="margin: 2rem"></i>
+    </a>
+    <br />
+    <!-- <a href=""
         ><i
           class="fa-brands fa-twitter"
           style="margin: 0.5rem"
         >
         </i
-      ></a>
-      <a href="">
-        <i
-          class="fa-brands fa-facebook"
-          style="margin: 0.5rem"
-        >
-        </i
-      ></a>
-      <a href=""
-        ><i
-          class="fa-brands fa-instagram"
-          style="margin: 0.5rem"
-        >
-        </i
-      ></a>
-      <a href=""
-        ><i
-          class="fa-solid fa-envelope"
-          style="margin: 0.5rem"
-        >
-        </i
-      ></a>
-      <p>© Copyright ArslanT</p>
-    </footer>
-  </body>
+      ></a> -->
+    <a href="https://www.facebook.com/azimendustri">
+      <i class="fa-brands fa-facebook" style="margin: 0.5rem">
+      </i></a>
+    <a href="https://www.instagram.com/azimendustri/"><i class="fa-brands fa-instagram" style="margin: 0.5rem">
+      </i></a>
+    <a href=""><i class="fa-solid fa-envelope" style="margin: 0.5rem">
+      </i></a>
+    <p>© Copyright ArslanT</p>
+  </footer>
+</body>
+
 </html>
