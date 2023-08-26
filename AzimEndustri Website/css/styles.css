@@ -1,0 +1,389 @@
+body {
+  font-family: 'Baskervville', serif;
+}
+
+/* navBar Stlyes */
+
+#NavBar {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  transition: 0.3s;
+  z-index: 999;
+
+}
+
+.navBar {
+  display: flex;
+  height: 60px;
+  justify-content: end;
+  background-color: transparent;
+}
+
+.logoAmblem {
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.logoAmblemSiyah {
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.logoAmblemBeyaz {
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.logosiyah {
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logobeyaz {
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navBar span {
+  position: absolute;
+  margin-left: 20%;
+  margin-top: 2%;
+  margin-right: 8vh;
+  cursor: pointer;
+}
+
+.menubeyaz {
+  font-size: 30px;
+  color: #f1f1f1;
+}
+
+.menusiyah {
+  font-size: 30px;
+  color: #000;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  background-color: #fff;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 25px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #1c1c1c;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #e4e1e1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* Carousel */
+
+#karosel {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.karosel-img {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  object-fit: fill;
+}
+
+.carousel-item em {
+  color: #fff;
+  position: absolute;
+  font-size: 30px;
+  font-weight: 500;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: identifier1 1.5s ease-out;
+}
+
+.carousel .carousel-indicators button {
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  margin: -4% 7px 0 7px !important;
+}
+
+/* menu */
+#menu {
+  padding: 2% 0;
+  margin-top: 100vh;
+}
+
+#menu h1,
+p,
+a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+.galeri2 {
+  margin-top: -6% !important;
+}
+
+.galeri3 {
+  margin-top: -6% !important;
+}
+
+.galeri4 {
+  margin-top: -6% !important;
+}
+
+.galeri-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.galeri-text {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+
+/* CTA Section */
+
+#cta {
+  background-color: #fff;
+  color: #1c1c1c;
+  text-align: center;
+  padding: 7% 2%;
+}
+
+/* Footer section */
+
+#footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 2% 15%;
+}
+
+#footer a {
+  color: #1c1c1c;
+}
+
+.arrow-up {
+  transform: scale(2);
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+
+/* keyFrames */
+
+@keyframes identifier1 {
+  from {
+    opacity: 0;
+    top: 63%;
+    left: 50%;
+  }
+
+  to {
+    opacity: 1;
+    top: 60%;
+    left: 50%;
+  }
+
+}
+
+/* scrolldownAnimation */
+
+.reveal {
+  position: relative;
+  transform: translateY(6%);
+  opacity: 0.2;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* .reveal1 {
+  position: relative;
+  transform: translateY(10%);
+  opacity: 0.2;
+  transition: 1s all ease;
+}
+
+.reveal1.active {
+  transform: translateY(0);
+  opacity: 1;
+} */
+
+
+/* mediaQuerry */
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay-content {
+    font: size 0.7em;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 7px;
+    right: 25px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  #karosel {
+    object-fit: none;
+  }
+
+  .karosel-img {
+    object-fit: none;
+  }
+
+  .galeri-title {
+    text-align: center;
+  }
+
+  .galeri-text {
+    text-align: justify;
+  }
+
+  .galeri2,
+  .galeri3,
+  .galeri4 {
+    margin-top: 7% !important;
+  }
+
+  .carousel-item em {
+    color: #fff;
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 500;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: identifier1 1.5s ease-out;
+  }
+
+  .navBar span {
+    margin-left: 20%;
+    margin-right: 5vh;
+    margin-top: 4vh;
+  }
+
+  .logoAmblem {
+    position: absolute;
+    top: 120%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+
+  .logosiyah {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+
+  .logobeyaz {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+
+  .galeri-projeler-content {
+    text-align: justify;
+  }
+
+}
+
+/* HAKKIMIZDA */
+
+#Hakkımızda {
+  margin: 10% 5% !important;
+}
+
+
+/* PROJELER */
+
+
+#Projeler {
+  margin: 2% 5%;
+  margin-top: 20vh;
+}
+
+/* TASARIMLAR */
+
+#Tasarımlar {
+  margin: 2% 5%;
+  margin-top: 20vh;
+}
+
+/* İLETİŞİM */
+
+.iletisim-resim {
+  position: absolute;
+  top: 0;
+}
