@@ -216,6 +216,12 @@ a {
   transform: scale(2);
 }
 
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
 
 /* keyFrames */
 
@@ -272,10 +278,14 @@ a {
     font-size: 20px
   }
 
+  .overlay-content {
+    font: size 0.7em;
+  }
+
   .overlay .closebtn {
     font-size: 40px;
-    top: 15px;
-    right: 35px;
+    top: 7px;
+    right: 25px;
   }
 }
 
