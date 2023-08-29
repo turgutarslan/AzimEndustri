@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hoşgeldiniz - Azim Endüstri</title>
+  <title>İletişim - Azim Endüstri</title>
 
   <!-- favicon -->
 
@@ -129,24 +129,42 @@
     <div class="logoAmblem">
       <div class="logoAmblemSiyah">
         <a href="http://www.azimendustri.com/" class="logo1">
-          <img class="logo1" src="img\logo7.png" alt="" /></a>
+          <img class="logo1" src="img\logosiyah1.png" alt="" /></a>
       </div>
 
-      <div class="logoAmblemBeyaz">
-        <a href="http://www.azimendustri.com/" class="logo1">
-          <img class="logo1" src="img\logo7.png" alt="" /></a>
-      </div>
+      <!-- LOGO AMBLEM SÜREKLİ SİYAH OLMASI İÇİN KALDIRILDI  -->
+
+      <!-- <div class="logoAmblemBeyaz">
+          <a
+            href="http://www.azimendustri.com/"
+            class="logo1"
+          >
+            <img
+              class="logo1"
+              src="img\logo7.png"
+              alt=""
+          /></a>
+        </div> -->
     </div>
     <div class="logosiyah">
       <a href="http://www.azimendustri.com/" class="logo1">
         <img class="logo1" src="img\logo - yazı-png-siyah2.png" alt="" /></a>
     </div>
 
-    <div class="logobeyaz">
-      <a href="http://www.azimendustri.com/" class="logo1">
-        <img class="logo1" src="img\logo - yazı-png-beyaz2.png" alt="" />
-      </a>
-    </div>
+    <!-- LOGO SÜREKLİ SİYAH OLMASI İÇİN  -->
+
+    <!-- <div class="logobeyaz">
+        <a
+          href="http://www.azimendustri.com/"
+          class="logo1"
+        >
+          <img
+            class="logo1"
+            src="img\logo - yazı-png-beyaz2.png"
+            alt=""
+          />
+        </a>
+      </div> -->
 
     <div class="navBar">
       <div id="myNav" class="overlay">
@@ -155,12 +173,14 @@
         <div class="overlay-content">
           <a href="Hakkımızda.html">Hakkımızda</a>
           <a href="Projeler.html">Projelerimiz</a>
-          <a href="Tasarımlar.html">Tasarımlarımız</a>
+          <!-- <a href="Tasarımlar.html">Tasarımlarımız</a> -->
           <a href="İletişim.html">İletişim</a>
         </div>
       </div>
 
-      <span class="menubeyaz" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+      <!-- MENU SÜREKLİ SİYAH OLMASI İÇİN menusiyah YAPILDI -->
+
+      <span class="menusiyah" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
 
       <!-- OVERLAY MENU -->
 
@@ -199,15 +219,62 @@
       };
     </script>
   </section>
+
+  <!-- HİDE NAVBAR ON SCROLL -->
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos =
+        window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById(
+          "NavBar"
+        ).style.top = "0px";
+      } else {
+        document.getElementById(
+          "NavBar"
+        ).style.top = "-200px";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+  </script>
+  </section>
   <!-- Carousel -->
 
   <!-- Galeriler -->
   <section id="İletişim">
-    <div class="row iletişim-resim">
-      <div class="col-lg-12 col-md-12 col-sm-12 iletişim-resim">
-        <img class="img-fluid" src="img\iletişim.jpg" alt=""></img>
+    <!-- <div class="row iletişim-resim mx-auto">
+      <div class="col-lg-9 col-md-9 col-sm-9 iletişim-resim mx-auto">
+        <img class="img-fluid" src="img\iletişim11.jpeg" alt=""></img>
       </div>
+    </div> -->
+    <div class=" row iletisim-baslik text-center">
+      <p><b> İletişim </b></p>
     </div>
+    <br>
+    <div class="col-lg-8 col-md-12 col-sm-12 iletisim-adres text-center">
+      <img class="img-fluid" src="img\iletişim11.jpeg">
+    </div>
+    <br>
+    <div class=" row iletisim-sirket text-center mx-5">
+      <p><b> EREĞLİ AZİM ENDÜSTRİ SANAYİ VE TİCARET LTD. ŞTİ. </b></p>
+    </div>
+    <br>
+    <br>
+    <div class="col-lg-8 col-md-8 col-sm-12 iletisim-adres">
+      <div>
+        <p><b>Adres:</b> Kepez Mah. 1 Nolu Çetin Emeç Sk. Zümrüt Apt. No: 10 Kapı No: 9
+          <br>
+          Kdz.Ereğli / Zonguldak
+          <br>
+        <p><b>GSM:</b> 0533 273 80 07
+          <br> <br>
+        </p>
+      </div>
+
+    </div>
+
   </section>
 
   <!-- İletişim Bilgileri -->

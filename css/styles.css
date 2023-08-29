@@ -190,6 +190,20 @@ a {
   text-align: justify;
 }
 
+.iletisim-baslik {
+  margin-top: 7%;
+  font-size: 2em;
+}
+
+.iletisim-sirket {
+  font-size: 1.5em;
+}
+
+.iletisim-adres {
+  margin: auto;
+  width: 60%;
+}
+
 
 /* CTA Section */
 
@@ -302,10 +316,6 @@ td {
 
   .galeri-title {
     text-align: center;
-  }
-
-  .galeri-text {
-    text-align: justify;
   }
 
   .galeri2,
