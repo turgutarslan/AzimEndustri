@@ -289,18 +289,14 @@ td {
   }
 
   .overlay a {
-    font-size: 20px
-  }
-
-  .overlay-content {
-    font-size: 0.7em;
-    transform: translateY(15px);
+    font-size: 1rem;
+    transform: translateY(10%)
   }
 
   .overlay .closebtn {
     font-size: 40px;
-    top: 3px;
-    right: 15px;
+    top: 3%;
+    right: 5%;
   }
 }
 
