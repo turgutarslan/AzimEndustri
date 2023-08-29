@@ -283,7 +283,7 @@ td {
 
 /* mediaQuerry */
 
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 760px) {
   .overlay {
     overflow-y: auto;
   }
